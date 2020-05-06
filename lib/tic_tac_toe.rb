@@ -133,3 +133,14 @@ def winner(board)
     end
   end
 end
+
+def play
+  until.over?(board) == true
+    turn(board)
+  end
+
+  if won?(board) == true
+    puts "Congratulations, you are the winner #{winner(board)}!" #congratulate the winner
+  elsif draw?(board) == true #else if the game was a draw
+    puts "I'm so sorry it's a draw!"
+end
