@@ -143,4 +143,5 @@ def play
     puts "Congratulations, you are the winner #{winner(board)}!" #congratulate the winner
   elsif draw?(board) == true #else if the game was a draw
     puts "I'm so sorry it's a draw!"
+  end
 end
